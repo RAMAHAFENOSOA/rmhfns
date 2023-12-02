@@ -1,4 +1,11 @@
 @font-face {
+  font-family: VT323;
+  src: url("../fonts/VT323/VT323-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
@@ -64,7 +71,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Space Mono", Arial, serif;
+  font-family: "VT323";
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -234,12 +241,9 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-features .feature-left .icon {
-  display: table;
   text-align: center;
-  width: 100px;
-  height: 100px;
   margin: 0 auto;
-  background: #fff;
+  /* background: #fff; */
   margin-bottom: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -320,6 +324,9 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .info li {
+  column-gap: 2rem;
+  display: flex;
+  align-items: center;
   width: 100%;
   float: left;
   list-style: none;
@@ -522,7 +529,6 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #94be46;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -1056,7 +1062,6 @@ input[type="text"] {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   text-align: center;
   -webkit-border-radius: 50%;
